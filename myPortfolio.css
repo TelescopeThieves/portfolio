@@ -1,0 +1,556 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+fieldset{
+    border: none;
+}
+/*..................................... fonts ..................................... */
+h1,h2,p, nav a,h3, .mario span, label,textarea, input, .contact h2, nav a{
+    color: rgb(23, 0, 51);
+} 
+h1,h2, nav a{
+    font-family: Helvetica, sans-serif;
+    font-weight: bold; 
+}
+h1,h2{
+    font-size: 4rem;
+    padding: 2rem 0;
+}
+h2{
+    text-align: center;
+}
+
+p, h3, .mario span, label, span, .language a{
+    font-family: 'Padauk', sans-serif;
+    font-size: 2rem;
+    font-weight: normal;
+}
+h3{
+    font-size: 2rem;
+    font-weight: bold;
+}
+label{
+    font-size: 1.5rem;
+}
+/* .....................................nav..................................... */
+nav{
+    position: fixed;
+    width: 90%;
+    right: 5%;
+    z-index: 100;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(196, 198, 202, 1);
+}
+nav ul{ 
+    justify-content:flex-end;
+    width: 100%;
+}
+nav a{
+    text-align: center;
+    width: auto;
+    height: auto;
+    font-size: 1.2rem;
+    padding: 0 2rem;
+}
+a.anchors{
+    width: auto;
+    height: auto;
+}
+nav li{
+    padding-top: 1rem;
+}
+/* .....................................layout..................................... */
+
+.page{
+    width: 100%;
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.cloud{
+    background: white;
+    border-radius: 1rem;
+    padding: 4rem;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: -20px -20px rgb(218, 172, 255);
+}
+.cloudAlt{
+    background: rgb(23, 0, 51);
+    border-radius: 1rem;
+    padding: 4rem;
+    box-shadow: -20px -20px rgb(218, 172, 255);
+}
+/* .....................................width..................................... */
+.bigBox{
+    width: 70%;
+    margin:0 auto;
+    margin-top: 8rem;
+}
+/* .....................................home..................................... */
+.home{
+    display: flex;
+    flex-direction: column;
+}
+.headShot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.headShotTitle{
+    width: 75%;
+}
+.headShotSection{
+    width: 25%;
+}
+
+.home h2{
+    font-size: 5rem;
+    text-align: left;
+    padding: 0 0 .5rem 0;
+}
+.home span, #techSpan, #projectSpan{
+    display: block;
+    padding: .5rem 0;
+    border-bottom: 1px solid rgba(196, 198, 202, 1);
+    font-weight: bold;
+}
+.home p {
+    text-align: left;
+    padding: 1rem 0;
+
+}
+.socials{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-top: .5rem;
+    
+}
+.socials a{
+    font-size: 1.5rem;
+    color: rgba(7, 0, 217, 1);
+    margin-left: 3rem;
+    font-family: 'Padauk', sans-serif;
+}
+.home img{
+    width: 100%;
+    border-radius: 1rem;
+}
+/*..................................... Tech Stack ..................................... */
+.techStack, .projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.language, .projectBlock{
+    display: flex;
+    /* flex-direction: column; */
+    /* text-align: center; */
+    /* width: 15%; */
+}
+.language{
+    flex-direction: column;
+    text-align: center;
+    width: 15%;
+}
+.techStack i{
+    color: rgb(23, 0, 51);
+    font-size: 3rem;
+    padding: 0;
+}
+
+/* .....................................portfolio..................................... */
+.projectBlock{
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.projectBlock img{
+    width: 100%;
+    border-radius: .5rem;
+}
+/* .projectLinks{
+    width: 40%;
+}
+.projectImgSec{
+    width: 60%;
+} */
+
+.projectLinks a{
+    font-size: 1.5rem;
+    color: rgb(23, 0, 51);
+
+}
+#motifs{
+    font-family: 'Calistoga', cursive;
+    font-size: 3rem;
+}
+.projectStack{
+    opacity: .5;
+    font-weight: bold;
+}
+/* .....................................footer..................................... */
+.fieldSection{
+    display: flex;
+}
+
+.fieldH2{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.fieldH2 i{
+    font-size: 30rem;
+}
+
+.fieldSection form{
+    width: 100%;
+}
+footer{
+    background: white;
+
+}
+.contact, form{
+    display: flex;
+    flex-direction: column;
+}
+.contact{
+    width: 100%;
+}
+.contact h2, label{
+    color: white;
+}
+.contact h2{
+    text-align: center;
+    padding: 0;
+}
+
+i{
+    font-size: 2rem;
+    padding-left: 1.5rem;
+    color:  white;  
+}
+.formSection{
+    border-bottom: 1px solid rgba(196, 198, 202, 1);
+    margin-bottom: 1rem;
+}
+textarea, input{
+    border: none;
+    background: rgba(23, 0, 51, .5);
+    font-family: 'Padauk', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+::placeholder{
+    color: white;
+    opacity: .8;
+}
+label{
+    text-align: left;
+    padding: 0;
+}
+.btnSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+button{
+    font-family: 'Padauk', sans-serif;
+    width: 15rem;
+    height: 3rem;
+    background: rgb(218, 172, 255);
+    border: none;
+    padding: 0;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: rgb(23, 0, 51);
+}
+input, textarea{
+    width: 100%;
+}
+
+/* images */
+
+/*..................................... styles..................................... */
+body, nav{
+    background: white;
+}
+.topSpace{
+    margin-top: 1rem;
+}
+.topSpace2{
+    margin-top: 4rem;
+}
+.bottomSpace{
+    margin-bottom: 8rem;
+}
+.padding{
+    padding: 1rem;
+}
+.padding-left{
+    padding-left: 1rem;
+}
+.padding-right{
+    padding-right: 1rem;
+}
+.padding-top{
+    padding-top: 1rem;
+}
+.padding-bottom{
+    padding-bottom: 1rem;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: start;
+}
+p{
+    width: 100%;
+    text-align: left;
+}
+p.date{
+    text-align: right;
+}
+.statHeader p{
+    font-weight: bold;
+}
+
+li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+    padding: 0;
+    cursor: pointer;
+    text-align: left;
+    color: rgba(7, 0, 217, 1);
+    font-family: 'Padauk', sans-serif;
+}
+
+.pageContent span{
+    width: 100%;
+}
+.margin-bottom{
+    margin-bottom: 2rem;
+}
+/*..................................... state .....................................  */
+.socials a:hover{
+    transition: .2s ease;
+    color: rgb(143, 140, 250);
+    border-bottom: 1px solid rgba(143, 140, 250, .8);
+}
+a:hover{
+    color: rgb(143, 140, 250);
+}
+button:hover{
+    background: rgb(143, 140, 250);
+    color: white;
+}
+img:hover{
+    opacity: .7;
+}
+
+/*..................................... media queries .....................................  */
+@media (max-width: 1100px){
+
+    .bigBox{
+        width: 80%;
+    }
+
+}
+@media(max-width: 900px){
+    .bigBox{
+        width: 90%;
+    }
+    nav{
+        width: 95%;
+        left: 2.5%;
+    }
+    nav a{
+        padding: 0 2rem;
+    }
+    .cloud, .cloudAlt{
+        box-shadow: -10px -10px rgb(218, 172, 255);
+    }
+    h2{
+        font-size: 2.5rem;
+    }
+}
+@media(max-width: 850px){
+    .cloud, .cloudAlt{
+        padding: 3rem;
+    }
+    .home p, .mario span, p, .socials a, span{
+        font-size: 1.7rem;
+    }
+    .fieldH2 i{
+        font-size: 24rem;
+    }
+    .projectBlock{
+        flex-direction: column;
+    }
+    .projectLinks, .projectImgSec{
+        width: 100%;
+        padding-right: 0;
+    }
+    .projectImgSec{
+        padding-top: 1rem;
+    }
+    p, .home p, .socials a{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width: 800px){
+    .headShotTitle{
+        width: 65%;
+    }
+    .headShotSection{
+        width: 35%;
+    }
+    .fieldH2{
+        width: 40%;
+    }
+    .fieldSection form, .btnSection{
+        /* width: 60%; */
+    }
+    .btnSection{
+        /* left: 40%; */
+    }
+}
+@media(max-width: 650px){
+    .home{
+        flex-direction: column;
+    }
+    .homeSectionImage{
+        width: 40%;
+    }
+    .homeSectionName{
+        width: 100%;
+    }
+    nav a{
+        padding: 1rem;
+    }
+    .socials a{
+        margin-left: 2rem;
+    }
+    .fieldSection{
+        flex-direction: column;
+    }
+    .fieldH2{
+        width: 30%;
+    }
+    .fieldH2,.fieldSection form, .btnSection{
+        width: 100%;
+    }
+    .btnSection{
+        left: 0%;
+    }
+    .fieldH2{
+        display: none;
+    }
+    .language{
+        width: 33%;
+    }
+    .margin-bottom3{
+        margin-bottom: 3rem;
+    }
+    .projectBlock{
+        width: 100%;
+    }
+
+}
+@media(max-width: 500px){
+    .socials a{
+        margin-left: 1rem;
+    }
+    .headShotTitle{
+        width: 55%;
+    }
+    .headShotSection{
+        width: 45%;
+    }
+    p, .home p, .socials a{
+        font-size: 1.3rem;
+    }
+}
+@media(max-width: 450px){
+    .cloud, .cloudAlt{
+        box-shadow: -5px -5px rgb(218, 172, 255);
+    }
+    .socials a{
+        margin-left: .5rem;
+    }
+    .home h2{
+        font-size: 2.7rem;
+    }
+    .headShot{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .headShotTitle{
+        width: 100%;
+    }
+    .headShotSection{
+        width: 100%;
+        /* text-align: right; */
+    }
+    #headShotImage{
+        width: 30%;
+        border-radius: 7%;
+        margin-bottom: 1rem;
+    }
+
+}
+@media(max-width: 400px){
+    h3{
+        font-size: 1.7rem;
+    }
+    h2{
+        font-size: 2.2rem;
+    }
+    .cloud, .cloudAlt{
+        padding: 2rem;
+    }
+    button{
+        width: 12rem;
+        height: 3rem;
+    }
+    i{
+        font-size: 1.7rem;
+    }
+    .socials{
+        justify-content: flex-start;
+    }
+    .socials a{
+        margin-left: 0;
+        margin-right: .7rem;
+    }
+}
+@media(max-width: 330px){
+    button{
+        width: 10rem;
+        height: 3rem;
+    }
+    i{
+        font-size: 1.6rem;
+    } 
+}
