@@ -429,12 +429,6 @@ img:hover{
     .fieldH2{
         width: 40%;
     }
-    .fieldSection form, .btnSection{
-        /* width: 60%; */
-    }
-    .btnSection{
-        /* left: 40%; */
-    }
 }
 @media(max-width: 650px){
     .home{
