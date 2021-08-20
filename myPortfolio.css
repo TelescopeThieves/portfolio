@@ -32,6 +32,9 @@ p, h3, .mario span, label, span, .language a{
     font-size: 2rem;
     font-weight: normal;
 }
+a{
+    font-size: 1.8rem;
+}
 h3{
     font-size: 2rem;
     font-weight: bold;
@@ -141,6 +144,7 @@ nav li{
     margin-left: 3rem;
     font-family: 'Padauk', sans-serif;
 }
+
 .home img{
     width: 100%;
     border-radius: 1rem;
@@ -179,17 +183,15 @@ nav li{
     width: 100%;
     border-radius: .5rem;
 }
-/* .projectLinks{
-    width: 40%;
+.projectLinks{
+    width: 100%;
 }
-.projectImgSec{
-    width: 60%;
-} */
-
 .projectLinks a{
     font-size: 1.5rem;
     color: rgb(23, 0, 51);
-
+}
+.code a{
+    color: rgba(7, 0, 217, 1);
 }
 #motifs{
     font-family: 'Calistoga', cursive;
@@ -305,14 +307,47 @@ body, nav{
 .padding-left{
     padding-left: 1rem;
 }
+.padding-left2{
+    padding-left: 2rem;
+}
 .padding-right{
     padding-right: 1rem;
+}
+.padding-right2{
+    padding-right: 2rem;
 }
 .padding-top{
     padding-top: 1rem;
 }
 .padding-bottom{
     padding-bottom: 1rem;
+}
+.width100{
+    width: 100%;
+}
+.width50{
+    width: 50%;
+}
+.width25{
+    width: 25%;
+}
+.end{
+    text-align: end;
+}
+.flex{
+    display: flex;
+}
+.justify{
+    justify-content: center;
+}
+.align{
+    align-items: center;
+}
+.jSpace{
+    justify-content: space-between;
+}
+.jEnd{
+    justify-content: flex-end;
 }
 
 ul{
@@ -353,7 +388,7 @@ a{
     margin-bottom: 2rem;
 }
 /*..................................... state .....................................  */
-.socials a:hover{
+.socials a:hover, a:hover{
     transition: .2s ease;
     color: rgb(143, 140, 250);
     border-bottom: 1px solid rgba(143, 140, 250, .8);
