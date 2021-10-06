@@ -158,9 +158,12 @@ nav li{
 }
 .language, .projectBlock{
     display: flex;
-    /* flex-direction: column; */
-    /* text-align: center; */
-    /* width: 15%; */
+}
+.stack, .linksToCode{
+    width: 50%;
+}
+.linksToCode{
+    justify-content: flex-end;
 }
 .language{
     flex-direction: column;
@@ -196,10 +199,6 @@ nav li{
 #motifs{
     font-family: 'Calistoga', cursive;
     font-size: 3rem;
-}
-.projectStack{
-    opacity: .5;
-    font-weight: bold;
 }
 /* .....................................footer..................................... */
 .fieldSection{
@@ -285,7 +284,9 @@ button{
 input, textarea{
     width: 100%;
 }
-
+.liveVersion {
+    padding-left: 2rem;
+}
 /* images */
 
 /*..................................... styles..................................... */
@@ -386,6 +387,9 @@ a{
 }
 .margin-bottom{
     margin-bottom: 2rem;
+}
+.projectInfo{
+    justify-content: space-between;
 }
 /*..................................... state .....................................  */
 .socials a:hover, a:hover{
@@ -505,7 +509,9 @@ img:hover{
     .projectBlock{
         width: 100%;
     }
-
+    .code a{
+        font-size: 1.2rem;
+    } 
 }
 @media(max-width: 500px){
     .socials a{
@@ -517,9 +523,22 @@ img:hover{
     .headShotSection{
         width: 45%;
     }
-    p, .home p, .socials a{
+    p, .home p, .socials a, a{
         font-size: 1.3rem;
     }
+    .projectInfo {
+        flex-wrap: wrap;
+    }
+    .stack{
+        width: 100%;
+    }
+    .linksToCode{
+        justify-content: flex-start;
+    }
+    .code a{
+        font-size: 1.3rem;
+    }
+
 }
 @media(max-width: 450px){
     .cloud, .cloudAlt{
