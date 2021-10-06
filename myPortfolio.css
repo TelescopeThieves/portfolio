@@ -181,7 +181,7 @@ nav li{
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 6rem;
+    margin-bottom: 3.5rem;
 }
 .projectBlock img{
     width: 100%;
@@ -453,9 +453,6 @@ img:hover{
         width: 100%;
         padding-right: 0;
     }
-    .projectImgSec{
-        padding-top: 1rem;
-    }
     p, .home p, .socials a{
         font-size: 1.5rem;
     }
@@ -536,9 +533,13 @@ img:hover{
     }
     .linksToCode{
         justify-content: flex-start;
+        width: 100%;
     }
     .code a{
         font-size: 1.3rem;
+    }
+    .end{
+        text-align: start;
     }
 
 }
