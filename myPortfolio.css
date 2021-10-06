@@ -181,6 +181,7 @@ nav li{
     width: 100%;
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 6rem;
 }
 .projectBlock img{
     width: 100%;
@@ -390,6 +391,7 @@ a{
 }
 .projectInfo{
     justify-content: space-between;
+    margin-bottom: 1rem;
 }
 /*..................................... state .....................................  */
 .socials a:hover, a:hover{
